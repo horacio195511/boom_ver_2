@@ -1,15 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div>
+  <component
+    :is="present"
+    @change-view="present = $event"
+    ></component>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Login from './components/Login.vue';
+import Signup from './components/Signup.vue';
+import Home from './components/Home.vue';
+import ListAndForm from './components/ListAndForm.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Login,
+    Signup,
+    Home,
+    ListAndForm,
+  },
+  data(){
+    return{
+      present:'Home',
+    };
   }
 }
 </script>
