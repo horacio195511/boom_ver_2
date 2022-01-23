@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="app">
   <component
     :is="present"
     @change-view="present = $event"
@@ -36,5 +36,19 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.center{
+    position: sticky;
+    top: 2%;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    border-bottom: 1px solid black ;
+    }
+.center-no-back{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    text-align: center;
 }
 </style>

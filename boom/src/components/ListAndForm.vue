@@ -1,7 +1,7 @@
 <template>
 <div>
     <!--Sidebar, should be expandable-->
-    <div>
+    <div class="center">
         <button type="button" @click="toThing">Thing</button>
         <button type="button" @click="toOrder">Order</button>
         <button type="button" @click="toPrinter">Printer</button>
@@ -38,8 +38,16 @@ import ThingList from './List/ThingList.vue'
 
 export default {
     name: 'ListAndForm',
-    module: {
-        Item, NewsForm, OrderForm, PrinterForm, ThingForm, NewsList, OrderList, PrinterList, ThingList
+    components: {
+        Item,
+        NewsForm,
+        OrderForm,
+        PrinterForm,
+        ThingForm,
+        NewsList,
+        OrderList,
+        PrinterList,
+        ThingList
     },
     data(){
         return {
@@ -84,8 +92,11 @@ export default {
 }
 .left{
   flex: 70%;
+  margin: auto;
 }
 .right{
   flex: 30%;
+  margin:auto;
+  border-left: 1px solid black;
 }
 </style>

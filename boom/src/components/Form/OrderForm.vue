@@ -3,7 +3,7 @@
       <table>
           <tr>
               <td><label for="thing">Thing</label></td>
-              <td>><input type="url" id="thing" v-model="thing"></td>
+              <td><input type="url" id="thing" v-model="thing"></td>
           </tr>
           <tr>
               <td><label for="amount">Amount</label></td>
@@ -36,6 +36,9 @@ export default {
     },
     props: ['selectedItem'],
     methods: {
+      addThing(){
+        
+      }
     },
     computed: {
       opText(){

@@ -1,6 +1,6 @@
 <template>
     <div>
-        thing
+        thingList
     </div>
 </template>
 

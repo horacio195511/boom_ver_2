@@ -1,5 +1,6 @@
 <template>
-  <table>
+<div class="center-no-back">
+  <table class="center-no-back">
       <tr>
           <td><label for="privateKey">Private Key</label></td>
           <td><input id="privateKey" type="text"></td>
@@ -13,6 +14,7 @@
           <td><button type="button" @click="signup">Signup</button></td>
       </tr>
   </table>
+</div>
 </template>
 
 <script>

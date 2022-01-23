@@ -1,6 +1,6 @@
 <template>
-  <div>
-      <table>
+  <div class="center-no-back">
+      <table class="center-no-back">
           <tr>
               <td><label for="privateKey">Private Key</label></td>
               <td><input type="text" placeholder="Enter Ethereum Private Key"></td>
