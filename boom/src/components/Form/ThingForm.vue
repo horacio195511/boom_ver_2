@@ -27,12 +27,15 @@
 
 <script>
 export default {
-    name: 'CreateThing',
+    name: 'ThingForm',
+    module: {},
+    data(){
+        return{
+
+        }
+    },
     props: ['selectedItem'],
     methods: {
-        createThing(){
-            
-        }
     },
     computed: {
         opText(){

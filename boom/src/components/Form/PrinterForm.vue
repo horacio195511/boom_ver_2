@@ -31,12 +31,15 @@
 
 <script>
 export default {
-    name: 'CreatePrinter',
-    props: ['selectedItem'],
-    methods: {
-        createPrinter(){
+    name: 'PritnerForm',
+    module: {},
+    data(){
+        return{
 
         }
+    },
+    props: ['selectedItem'],
+    methods: {
     },
     computed: {
         opText(){

@@ -23,7 +23,8 @@
 
 <script>
 export default {
-    name: 'CreateNews',
+    name: 'NewsForm',
+    module: {},
     props: ['selectedItem'],
     methods:{
         createNews(){
@@ -35,6 +36,8 @@ export default {
                 formdata.append('author', 'test');
                 formdata.append('create', new Date());
                 formdata.append('publish', this.publishDate);
+                // the method below should be called from other module
+                // for responsibility seperation
                 fetch('http://localhost:7000/createNEWS', {
                     method: 'POST',
                     mode: 'cors',
@@ -87,6 +90,18 @@ export default {
             }else{
                 return 'Send Edit';
             }
+        },
+        update(){
+            this.title = this.selectedItem.title;
+            this.article = this.selectedItem.article;
+            this.publishDate = this.selectedItem.publishDate;
+            return 1;
+        }
+    },
+    data(){
+        return {
+            selecteditem: this.selectedItem,
+            update: this.update(),
         }
     }
 }

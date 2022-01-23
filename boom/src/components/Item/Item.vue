@@ -11,7 +11,7 @@
 
 <script>
 export default {
-    name: 'ListItem',
+    name: 'Item',
     props: ['item'],
     data(){
         return {
